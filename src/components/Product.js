@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Product = props => {
+const Product = props => { //pass in image, price, title
 	return (
 		<div className="product">
 			<img src={props.product.image} alt={`${props.product.title} book`} />
