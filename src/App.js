@@ -18,12 +18,8 @@ function App() {
 		setCart([...cart, item]);
 	};
 
-	const removeItem = item => {
-		console.log("I was clicked...")
-		/*
-		setCart([...cart, item
-			list: state.list.filter((item) => item.id !== action.id)
-		]);*/
+	const removeItem = (id) => {
+		setCart(cart.filter((item) => item.id !== id));
 	};
 
 	return (
