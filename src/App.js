@@ -18,8 +18,16 @@ function App() {
 		setCart([...cart, item]);
 	};
 
+	const removeItem = item => {
+		console.log("I was clicked...")
+		/*
+		setCart([...cart, item
+			list: state.list.filter((item) => item.id !== action.id)
+		]);*/
+	};
+
 	return (
-		<ProductContext.Provider value={{ products, addItem }}>
+		<ProductContext.Provider value={{ products, addItem, removeItem }}>
 			<CartContext.Provider value={{ cart }}>
 				<div className="App">
 					<Navigation />
